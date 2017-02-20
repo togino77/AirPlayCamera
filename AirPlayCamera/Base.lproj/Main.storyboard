@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2W-Rz-YJ8" userLabel="Preview">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X0d-3t-gnr">
+                                <rect key="frame" x="16" y="20" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="3lk-dM-bj7"/>
+                                    <constraint firstAttribute="width" constant="49" id="Ue1-73-EDz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pushSwitchSession:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fwi-gl-GOn"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X0d-3t-gnr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2hy-q6-cbl"/>
+                            <constraint firstItem="i2W-Rz-YJ8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Rt-qQ-mPH"/>
+                            <constraint firstItem="X0d-3t-gnr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="efO-FD-msE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i2W-Rz-YJ8" secondAttribute="bottom" id="jgA-7E-8ls"/>
+                            <constraint firstItem="i2W-Rz-YJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kZn-le-SEw"/>
+                            <constraint firstAttribute="trailing" secondItem="i2W-Rz-YJ8" secondAttribute="trailing" id="yPJ-qC-6hp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="preview" destination="i2W-Rz-YJ8" id="8Iv-Me-8Zf"/>
+                        <outlet property="switchSession" destination="X0d-3t-gnr" id="0lU-EL-zih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
